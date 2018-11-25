@@ -14,10 +14,12 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         Animal animal =(Animal) context.getBean("getAnimal");
         Person person = (Person) context.getBean("getPerson");
+        Person person2 = (Person) context.getBean("getPerson");
         Car car = context.getBean(Car.class);
         System.out.println(context);
         System.out.println(animal);
         System.out.println(person);
+        System.out.println(person2);
         System.out.println(car);
     }
 }
